@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Contact Us</title>
+<link rel="stylesheet" type="text/css" href="cont_style.css">
+</head>
+
+<body>
+	<?php
+
+session_start();
+
+?>
+
+	<div id="wrapper">
+		<div id="header">
+			<h1> Smile </h1>
+				<a href="Projecttt.html"><img  src="logo.jpg" alt="logo" /></a>
+						 <?php
+				  if(!isset($_SESSION['isLogged']))
+			      	{ ?>
+			<section>
+				
+			<a href="myLogin.php">LOGIN</a>
+			
+			<input id="register" type="submit" value="REGISTER">
+
+			</section>
+
+		 </div>
+		 <hr>
+		 <div id ="content">
+			 	<div id="leftSide">
+			 	<ul>
+			 		<li id="first"> <a href="Projecttt.html" >Home</a></li>
+			 		<li id="second"> <a href="AboutUs.html" > About us </a></li>
+			 		<li id="third"> <a href="Services.html" >Services</a></li>
+			 		<li id="fourth"> <a href="doctors.html" > Doctors </a></li>
+			 		<li id="fifth"> <a href="contactUs.html" > Contact us</a></li>
+			 	</ul>
+			 	</div>
+		
+
+
+		<div id = "rightSide">
+			<p> Adress: Titova 7, 71000 Sarajevo <br> Reservations: +387 33 123 456 <br> E-Mail: contact@smile.com <br> Working hours: Monday-Friday 10.00-18.00 </p>
+
+ </div>
+		</div>
+	</div>
+<hr>
+ 		<div id="footer">
+		 	<p> Copyright &copy 2014 </p>
+		 	<div id="find">
+		 	<p> Find us on </p>
+		 	<a href="https://www.facebook.com/StomatoloskaOrdinacijaBicakcic" target="_blank"><img  src="fb.png" alt="Facebook" /></a>
+		 	 </div>
+		 </div>
+</body>
+</html>

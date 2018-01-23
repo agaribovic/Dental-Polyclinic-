@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dental Polyclinic Smile </title>
+<link rel="stylesheet" type="text/css" href="myStile.css">
+<meta charset="UTF-8">
+</head>
+
+<body>
+	<?php
+
+session_start();
+
+?>
+
+	<div id="wrapper">
+		<div id="header">
+			<h3> Dental Polyclinic </h3>
+			<h1> Smile </h1>
+						<a href="Projecttt.html"><img  src="logo.jpg" alt="logo" /></a>
+			 <?php
+	  if(!isset($_SESSION['isLogged']))
+      	{ ?>
+			<section>
+				
+			<a href="myLogin.php">LOGIN</a>
+			
+			
+			<a href="register.php">REGISTER</a>
+
+			</section>
+
+		 </div>
+		 <hr>
+		 <div id ="content">
+		 	<div id="leftSide">
+		 	<ul>
+		 		<li id="first"> <a href="Projecttt.html" >Home</a></li>
+		 		<li id="second"> <a href="AboutUs.html" > About us </a></li>
+		 		<li id="third"> <a href="Services.html" >Services</a></li>
+		 		<li id="fourth"> <a href="doctors.html" > Doctors </a></li>
+		 		<li id="fifth"> <a href="contactUs.html" > Contact us</a></li>
+		 	</ul>
+		 </div>
+		 	<div id="rightSide">
+		 		<img src="pic1.jpg" >
+		 	</div>
+		 </div>
+<hr>
+
+		 <div id="nextPart">
+<div id="interesting" class="three">
+<h2> Did you know that... </h2>
+<p> ...an average person spends 38.5 days brushing their teeth over their lifetime. </p>
+<p> ...many diseases are linked to your oral health, including heart disease, osteoporosis, and diabetes. </p>
+<a href="http://www.123dentist.com/10-fun-facts-about-teeth/" target="_blank"> Read more >> </a>
+</div>
+<div id="text" class="three">
+<h2> Welcome </h2>
+<p> Welcome to the official page of Dental Polyclinc „Smile“. Years of experience in clinical and research work garanties you high level of dental services with individual approach to every patient.  In very pleasant environment we will enable the best dental care for You and Your family. Our knowledge, constant improvement and long experience are at Your service. </p>
+	</div>
+	<div id="video" class="three">
+			<h2> Check out our new video </h2> 
+	<video width="370" height="270" controls>
+		<source="commercial.mp4" type="video/mp4">
+	</video>
+
+	</div>
+		 </div>
+		 <hr>
+
+		 <div id="footer">
+		 	<p> Copyright &copy 2014 </p>
+		 	<div id="find">
+		 	<p> Find us on </p>
+		 	<a href="https://www.facebook.com/StomatoloskaOrdinacijaBicakcic" target="_blank"><img  src="fb.png" alt="Facebook" /></a>
+		 	 </div>
+		 </div>
+</div>
+</body>
+</html>

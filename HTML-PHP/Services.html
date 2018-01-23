@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dental Polyclinic Smile </title>
+<link rel="stylesheet" type="text/css" href="untitled.css">
+<meta charset="UTF-8">
+</head>
+
+<body>
+    <?php
+
+session_start();
+
+?>
+
+    <div id="wrapper">
+        <div id="header">
+            <h1> Smile </h1>
+<a href="Projecttt.html"><img  src="logo.jpg" alt="logo" /></a>
+             <?php
+      if(!isset($_SESSION['isLogged']))
+        { ?>
+            <section>
+                
+            <a href="myLogin.php">LOGIN</a>
+            
+            <input id="register" type="submit" value="REGISTER">
+
+            </section>
+
+         </div>
+         <hr>
+
+		 <div id ="content">
+		 	<div id="leftSide">
+		 	<ul>
+		 		<li id="first"> <a href="Projecttt.html" >Home</a></li>
+		 		<li id="second"> <a href="AboutUs.html" > About us </a></li>
+		 		<li id="third"> <a href="Services.html" >Services</a></li>
+		 		<li id="fourth"> <a href="doctors.html" > Doctors </a></li>
+		 		<li id="fifth"> <a href="contactUs.html" > Contact us</a></li>
+		 	</ul>
+		 </div>
+		 	<div id = "article">
+            	<h1><b> Services </b></h1>
+                
+                <div id = "chDentistry">
+                	<div id = "img1">
+                    	<img src="djecja-stomatologija.jpg"/>
+                    </div>
+                    
+                    <div id = "tekst1">
+                    	<h4> Children Dentistry </h4>
+                    <p> Professional team Smile Dental Polyclinic mainly consists of specialists in pediatric and preventive dentistry with years of experience in dedicated work with children. </p>
+                    </div>
+                
+                </div>
+                
+                <div id = "endodontics">
+                	<div id = "img2">
+                    	<img src="endodoncija.jpg"/>
+                    </div>
+                
+                <div id = "tekst2">
+                	<h4> Endodontics </h4>
+                   <p> Endodontics is a specialist branch of dentistry that deals with the treatment of dental pulp. It is believed that one of the worst and most intense pain just acute inflammation of the dental pulp. </p>   
+                </div>
+                
+                </div>
+                
+                
+                <div id = "CosDentistry">
+                	<div id = "img3">
+                    	<img src="estetska-restaurativna-st.jpg"/>
+                    </div>
+                    
+                    <div id = "tekst3">
+                    	<h4> Cosmetic and restorative dentistry </h4>
+                        <p> In our center of dental medicine, particular attention is focused on aesthetics with the unconditional application of the rules of the profession. We use the most modern and best quality. </p>
+                    
+                    </div>
+                
+                </div>
+                
+                
+                <div id = "Implantology">
+                	<div id = "img4">
+                    	<img src="implantologija.jpg" />
+                    </div>
+                    <div id = "tekst4">
+                    	<h4> Implantology </h4>
+                        <p> Modern surgery allows the installation of dental titanium implants in the lower or upper jaw. At the same time, after a certain period of time, implant "accretes" with bones and enables loading implants different prosthetic solutions. </p>
+                    </div>                    
+                
+                </div>
+                
+            	<div id = "Orthodontics">
+                	<div id = "img5">
+                    	<img src="ortodoncija.jpg"/>
+                    </div>
+                    
+                    <div id = "tekst5">
+                    	<h4> Orthodontics </h4>
+                        <p> Dr. Doctor, specialist in orthodontics, with more than 20 years experience in orthodontics solves all malocclusion of teeth using different types of orthodontic appliances, mobile but usually fixed. </p>
+                    
+                    </div>                
+                
+                </div>
+            </div> 
+    
+    
+        </div>  
+
+	<hr>
+		 <div id="footer">
+		 	<p> Copyright &copy 2014 </p>
+		 	<div id="find">
+		 	<p> Find us on </p>
+		 	<a href="https://www.facebook.com/StomatoloskaOrdinacijaBicakcic" target="_blank"><img src="fb.png" alt="Facebook" /></a>
+		 	 </div>
+		 </div>
+
+	</div>
+</body>
+</html>
+
